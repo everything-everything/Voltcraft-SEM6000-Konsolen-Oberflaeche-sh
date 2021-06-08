@@ -1,0 +1,48 @@
+Lizenz von meiner Oberfläche 
+
+Copyright (c) 2021 everything-everything
+
+Die Erlaubnis wird hiermit jeder Person kostenfrei erteilt,  
+diese Software und die beiliegende Dokumentation (die "Software") um folgende Dinge zu tun:
+
+- die Software uneingeschränkt nutzen zu können, einschließlich und ohne Einschränkung der Rechte:
+
+- zu verwenden, kopieren, modifizieren, zusammenführen, veröffentlichen, verteilen, unterlizenzieren und/oder verkaufen
+Kopien der Software zu erstellen und Personen, denen die Software zur Verfügung steht,
+dazu unter folgenden Bedingungen bereitgestellt:
+
+Der obige Urheberrechtshinweis und dieser Erlaubnishinweis müssen in allen enthalten sein
+Kopien oder wesentliche Teile der Software.
+
+DIE SOFTWARE WIRD "WIE GESEHEN", OHNE JEGLICHE GEWÄHRLEISTUNG, AUSDRÜCKLICH ODER
+STILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF DIE GARANTIEN DER MARKTGÄNGIGKEIT,
+EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND NICHTVERLETZUNG. IN KEINEM FALL SOLL DAS
+AUTOREN ODER URHEBERRECHTSINHABER HAFTEN FÜR JEGLICHE ANSPRÜCHE, SCHÄDEN ODER ANDERES
+HAFTUNG, OB AUS VERTRAGSHANDELN, UNERLAUBTER ODER ANDERWEITIG, AUS,
+AUSSER ODER IN VERBINDUNG MIT DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN HANDELN IN DER
+SOFTWARE.
+
+-------------------------------------------------------------------------------------------------
+
+License of sem-6000.exp (Original Project https://github.com/Heckie75/voltcraft-sem-6000)
+MIT License
+
+Copyright (c) 2019 Heckie
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
