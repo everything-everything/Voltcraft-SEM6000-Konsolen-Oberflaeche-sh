@@ -24,7 +24,7 @@ SOFTWARE.
 
 -------------------------------------------------------------------------------------------------
 
-License of sem-6000.exp (Original Project https://github.com/Heckie75/voltcraft-sem-6000)
+License of ./bin/sem-6000.exp (Original Project https://github.com/Heckie75/voltcraft-sem-6000)
 MIT License
 
 Copyright (c) 2019 Heckie
