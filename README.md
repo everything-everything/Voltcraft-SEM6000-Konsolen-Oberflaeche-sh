@@ -8,7 +8,7 @@ Zeile 41 : set KNOWN_SEMS_FILE "~/.known_sem6" zu set KNOWN_SEMS_FILE "./bin/kno
 
 dass es ssh kompatibel ist.
 
-Gestartet wird die Oberfläche ./run.sh oder über run_desktop.desktop die die ./run_desktop.sh Startet. Damit das ganze Funktioniert, muss die Datei "./bin/known_sem6.config" konfiguriert werden.
+Gestartet wird die Oberfläche ./run.sh oder über run_desktop.desktop die die ./run_desktop.sh Startet. Damit das ganze Funktioniert, muss die Datei "./bin/known_sem6.config" konfiguriert werden. Je nachdem muss man die Pfade beim Desktop run mit dem Texteditor in run_desktop.Desktop Anpassen.
 
 Inhalt der known_sem6.config: MAC / PIN / Bezeichnung FC:69:47:06:CB:C6 0000 fridge
 
