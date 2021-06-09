@@ -41,6 +41,8 @@ Geplante Features in Naher Zukunft:
 Konfiguraion der Konfigurationsdatei über die Oberfläche
 Geplante Features in weiter Ferne: -Features die SEM6000.EXP bietet nach und nach in die Terminal Oberfläche zu Integieren.
 
+Wie das ganze in Aktion aussieht: https://www.youtube.com/watch?v=hi06S4MO6H8
+
 Have fun
 
 Everything-Everything
