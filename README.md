@@ -24,7 +24,8 @@ gatttool für : $ sudo hcitool lescan E Scan ... --> Beispieladresse übernommen
 
 FC:69:47:06:CB:C6 Voltcraft
 
-Notiz: hcitool hat bei mir nicht funktioniert. Bei mir funktionierte bt-device -l , dass man mit sudo apt-get install bluez-tools bekommt. Dies ist jedoch subjektiv. (00:00:00:00:00:00) Voltcraft
+Notiz: hcitool hat bei mir nicht funktioniert. Bei mir funktionierte bt-device -l , dass man mit sudo apt-get install bluez-tools bekommt. Dies ist jedoch subjektiv. Ausgabe von bt-device -l: 
+$: (00:00:00:00:00:00) Voltcraft
 
 WICHTIG: Prüfen Sie vor dem Ausführen, dass die Konfigurationsdatei ./bin/known_sem6.config richtig Konfiguriert ist. Prüfen Sie ob der Virtuellen Maschine oder dem Linux der Bluetooth 4.0 Adapter zugeteilt wurde und Betriebsbereit ist.
 
