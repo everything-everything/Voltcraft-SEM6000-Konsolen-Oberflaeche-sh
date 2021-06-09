@@ -20,7 +20,9 @@ Systemvorrausetzungen (getestet): Q4OS Linux mit Trinity Oberfläche (Basiert au
 
 Installation sudo apt install expect
 
-gatttool für : $ sudo hcitool lescan E Scan ... --> Beispieladresse FC:69:47:06:CB:C6 Voltcraft
+gatttool für : $ sudo hcitool lescan E Scan ... --> Beispieladresse übernommen von Heckie75s Beschreibung: 
+
+FC:69:47:06:CB:C6 Voltcraft
 
 Notiz: hcitool hat bei mir nicht funktioniert. Bei mir funktionierte bt-device -l , dass man mit sudo apt-get install bluez-tools bekommt. Dies ist jedoch subjektiv. (00:00:00:00:00:00) Voltcraft
 
