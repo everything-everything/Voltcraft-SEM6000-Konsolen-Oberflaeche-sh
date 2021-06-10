@@ -18,7 +18,7 @@ Systemvorrausetzungen (getestet): Q4OS Linux mit Trinity Oberfläche (Basiert au
 
 Installation sudo apt install expect
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Anwendungshinweise bei Bluetooth im Terminal:
 
