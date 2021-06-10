@@ -58,6 +58,33 @@ Verwendung der Oberfläche:
 
 Ausführung: ./run.sh ----> in SSH oder Konsole oder ./run_desktop.sh ausgeführt über ein Doppelkick auf run_desktop.Desktop
 
+::::::::::::::::::::: 
+
+Konfiguration *.DESKTOP Dateien. 
+
+Bitte die Pfade bei Run_Desktop.desktop : 
+
+Exec[$e]='/media/sf_Linux/Voltcraft/expect/Run_Deskop.sh'
+...
+...
+Path[$e]=/media/sf_Linux/Voltcraft/expect  
+
+und bei Terminal.Desktop
+
+...
+Path[$e]=/media/sf_Linux/Voltcraft/expect 
+
+
+auf den Pfad in dem man Arbeitet und bei Run_Desktop wo die Datei liegt und wo diese Ausgeführt wird anpassen. Dies braucht man aber nur wenn man sich auf der Grafischen Oberfläche von Linux befindet und diese vom Desktop aus Öffnen will.
+
+Ansonsten kann man  ./run.sh oder über ./run_desktop.sh im Terminal aufrufen. Bei Q4OS funktioniert das ausführen der Scripts ohne zutun. 
+
+Ich  muss es noch testen ob man diese bei UBUNTU als ausführenden Script registrieren muss.
+
+
+:::::::::::::::::::::
+
+
 Protokolliert werden die Ergebnisse des Auslesens in ./Ergebnise
 
 Release: Version 0.5 BETA
