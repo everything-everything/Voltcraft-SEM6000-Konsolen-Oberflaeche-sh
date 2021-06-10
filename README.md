@@ -46,7 +46,7 @@ $: (00:00:00:00:00:00) Voltcraft
 
 WICHTIG: Prüfen Sie vor dem Ausführen, dass die Konfigurationsdatei ./bin/known_sem6.config richtig Konfiguriert ist. Prüfen Sie ob der Virtuellen Maschine oder dem Linux der Bluetooth 4.0 Adapter zugeteilt wurde und Betriebsbereit ist.
 
----------------------------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Verwendung der Oberfläche: 
 
