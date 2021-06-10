@@ -87,6 +87,9 @@ Ich  muss es noch testen ob man diese bei UBUNTU als ausführenden Script regist
 
 Protokolliert werden die Ergebnisse des Auslesens in ./Ergebnise
 
+Der Status ist im TXT Format gespeichert. Die Tabelle im *.WKS Format. Diese lässt sich in Excel ohne Probleme Öffnen und direkt bearbeiten. Am besten man weißt das WKS Format Excel im Explorer dann in Windows zu falls man Excel hat oder man öffnet es in LibreOffice oder OpenOffice.
+
+
 Release: Version 0.5 BETA
 
 Funktionen: Terminal Basierte Oberfläche für: Status Anzeige und Protokollierung Protokollierung von Watt in Sekunden sowie festlegung des Zeitraum
