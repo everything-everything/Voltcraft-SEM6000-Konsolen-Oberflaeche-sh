@@ -18,6 +18,23 @@ Systemvorrausetzungen (getestet): Q4OS Linux mit Trinity Oberfläche (Basiert au
 
 Installation sudo apt install expect
 
+Anwendungshinweise bei Bluetooth im Terminal:
+
+https://changeofpace.de/2018/04/05/bluetooth-geraete-mit-der-konsole-einrichten/
+
+bluetoothctl
+
+power on
+agent on
+default-agent
+
+scan on
+{Ergebnis}
+scan off 
+exit
+
+Nun kann man auch  hcitool oder bt-device -l nutzen. Wenn man beim Scan den Voltcraft nicht ermitteln konnte.
+
 gatttool für : $ sudo hcitool lescan E Scan ... --> Beispieladresse übernommen von Heckie75s Beschreibung: 
 
 FC:69:47:06:CB:C6 Voltcraft
