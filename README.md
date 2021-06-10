@@ -1,8 +1,11 @@
 # Voltcraft-SEM6000-Konsolen-Oberflaeche-im *.sh Format
 
-Wie das ganze in Aktion aussieht: https://www.youtube.com/watch?v=hi06S4MO6H8
 
-Linux Konsolen Oberfläche für Voltcraft SEM6000. Der Untergrund basiert auf Hackies75 Expect Script SEM6000.EXP   
+Linux Konsolen Oberfläche für Voltcraft SEM6000. 
+
+Wie das ganze in der Verwendung aussieht sehen Sie hier: https://www.youtube.com/watch?v=hi06S4MO6H8
+
+Der Untergrund basiert auf Hackies75 Expect Script SEM6000.EXP   
 Die Original Datei von ./bin/SEM6000.EXP wurde an folgener Stelle modifiziert. Um den Funktionsumfang der SEM6000.EXP sowie des Volcraft Gerätes als auch die Funktionsweise der Software Nachzulesen, lesen Sie hier nach https://github.com/Heckie75/voltcraft-sem-6000
 
 Zeile 41 : set KNOWN_SEMS_FILE "~/.known_sem6" zu set KNOWN_SEMS_FILE "./bin/known_sem6.config"
