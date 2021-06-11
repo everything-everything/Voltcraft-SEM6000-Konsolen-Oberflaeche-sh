@@ -1,6 +1,5 @@
 # Voltcraft-SEM6000-Konsolen-Oberflaeche-im *.sh Format
 
-
 Linux Konsolen Oberfläche für Voltcraft SEM6000. 
 
 Wie das ganze in der Verwendung aussieht sehen Sie hier: https://www.youtube.com/watch?v=hi06S4MO6H8
@@ -12,10 +11,6 @@ Zeile 41 : set KNOWN_SEMS_FILE "~/.known_sem6" zu set KNOWN_SEMS_FILE "./bin/kno
 
 dass es ssh kompatibel ist.
 
-Gestartet wird die Oberfläche ./run.sh oder über run_desktop.desktop die die ./run_desktop.sh Startet. Damit das ganze Funktioniert, muss die Datei "./bin/known_sem6.config" konfiguriert werden. Je nachdem muss man die Pfade beim Desktop run mit dem Texteditor in run_desktop.Desktop Anpassen.
-
-Inhalt der known_sem6.config: MAC / PIN / Bezeichnung FC:69:47:06:CB:C6 0000 fridge
-
 Der Skript der Oberfläche Orientiert sich an den Untergrund:
 
 https://bash.cyberciti.biz/guide/Menu_driven_scripts
@@ -25,6 +20,54 @@ Systemvorrausetzungen (getestet): In VirtualBox mit Q4OS Linux mit Trinity Oberf
 Installation sudo apt install expect
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Kapitel 1: Konfigurationen der Dateien für die Oberfläche 
+
+
+- Konfiguration der known_sem6.config:
+
+
+Damit das ganze Funktioniert, muss die Datei "./bin/known_sem6.config" konfiguriert
+werden. 
+
+Inhalt der known_sem6.config: MAC / PIN / Bezeichnung 
+
+|  MAC-Adresse   |PIN| Name des Messgerätes 
+FC:69:47:06:CB:C6 0000  Voltcraft
+
+Erläuterung
+Name des Messgerätes: 
+
+in ./bin/Wattsekunden.sh oder auch Status.sh steht
+
+|-------Script----| Namen des Messgerätes
+
+./bin/sem-6000.exp Volt
+
+::::::: Konfiguration der *.Desktop Dateien :
+
+Dienen als Verknüpfung zu ./run_desktop.sh und ./Terminal.sh das man dann von einem Dateimanager wie Konquer oder dem Schreibtisch aus Starten kann.
+
+Öffnen Sie diese in einem beliebigen Texteditor
+
+- Konfiguration der .Desktop Dateien : 
+
+   1) Bitte die Pfade bei Run_Desktop.desktop : 
+
+Exec[$e]='/media/sf_Linux/Voltcraft/expect/Run_Deskop.sh'
+...
+...
+Path[$e]=/media/sf_Linux/Voltcraft/expect  
+
+
+  2) Terminal.Desktop: 
+
+...
+Path[$e]=/media/sf_Linux/Voltcraft/expect 
+
+::::::::::::::::::::::::::::::
+
 
 Anwendungshinweise bei Bluetooth im Terminal:
 
@@ -43,56 +86,50 @@ exit
 
 Bereits hier sollte man die MAC-Adresse des Voltcraft Adapters haben.
 
-Nun kann man auch  hcitool oder bt-device -l nutzen. Wenn man beim Scan den Voltcraft nicht ermitteln konnte.
+Falls bluetoothctl keine Namen Ausdruckt: 
+
+Nun kann man auch  hcitool oder bt-device -l nutzen die nicht funktionieren wenn Bluetooth nicht richtig an gewesen ist.
 
 gatttool für : $ sudo hcitool lescan E Scan ... --> Beispieladresse übernommen von Heckie75s Beschreibung: 
 
 FC:69:47:06:CB:C6 Voltcraft 
 
-Notiz: hcitool hat bei mir unter UBUNTU 2104 nicht funktioniert. Bei mir funktionierte bt-device -l , dass man mit sudo apt-get install bluez-tools bekommt. Dies ist jedoch subjektiv. Ausgabe von bt-device -l: 
+Notiz: hcitool hat bei mir unter UBUNTU 2104 nicht funktioniert. Bei mir funktionierte bei UBUNTU2104 bt-device -l , dass man mit sudo apt-get install bluez-tools bekommt. Dies 
+ist jedoch subjektiv. Ausgabe von bt-device -l: 
 $: (00:00:00:00:00:00) Voltcraft
 
-WICHTIG: Prüfen Sie vor dem Ausführen, dass die Konfigurationsdatei ./bin/known_sem6.config richtig Konfiguriert ist. Prüfen Sie ob der Virtuellen Maschine oder dem Linux der Bluetooth 4.0 Adapter zugeteilt wurde und Betriebsbereit ist.
+WICHTIG: Prüfen Sie vor dem Ausführen, dass die Konfigurationsdatei ./bin/known_sem6.config richtig Konfiguriert ist. Prüfen Sie ob der Virtuellen Maschine oder dem Linux der
+Bluetooth 4.0 Adapter zugeteilt wurde und Betriebsbereit ist.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Verwendung der Oberfläche: 
 
-Ausführung: ./run.sh ----> in SSH oder Konsole oder ./run_desktop.sh ausgeführt über ein Doppelkick auf run_desktop.Desktop
+Ausführung: 
 
-::::::::::::::::::::: 
+Konsole: 
 
-Konfiguration *.DESKTOP Dateien. 
+./run.sh ----> in SSH oder Konsole oder ./run_desktop.sh ausgeführt 
 
-Bitte die Pfade bei Run_Desktop.desktop : 
+Benutzeroberfläche in Linux:
 
-Exec[$e]='/media/sf_Linux/Voltcraft/expect/Run_Deskop.sh'
-...
-...
-Path[$e]=/media/sf_Linux/Voltcraft/expect  
+über ein Doppelkick auf run_desktop.Desktop
 
-und bei Terminal.Desktop
-
-...
-Path[$e]=/media/sf_Linux/Voltcraft/expect 
-
-
-auf den Pfad in dem man Arbeitet und bei Run_Desktop wo die Datei liegt und wo diese Ausgeführt wird anpassen. Dies braucht man aber nur wenn man sich auf der Grafischen Oberfläche von Linux befindet und diese vom Desktop aus Öffnen will.
-
-Ansonsten kann man  ./run.sh oder über ./run_desktop.sh im Terminal aufrufen. Bei Q4OS funktioniert das ausführen der Scripts ohne zutun. 
+auf den Pfad in dem man Arbeitet und bei Run_Desktop wo die Datei liegt und wo diese Ausgeführt wird anpassen. Dies braucht man aber nur wenn man sich auf der Grafischen 
+Oberfläche von Linux befindet und diese vom Desktop aus Öffnen will.
 
 Ich  muss es noch testen ob man diese bei UBUNTU als ausführenden Script registrieren muss.
-
 
 :::::::::::::::::::::
 
 
 Protokolliert werden die Ergebnisse des Auslesens in ./Ergebnise
 
-Der Status ist im TXT Format gespeichert. Die Tabelle im *.WKS Format. Diese lässt sich in Excel ohne Probleme Öffnen und direkt bearbeiten. Am besten man weißt das WKS Format Excel im Explorer dann in Windows zu falls man Excel hat oder man öffnet es in LibreOffice oder OpenOffice.
+Der Status ist im TXT Format gespeichert. Die Tabelle im *.WKS Format. Diese lässt sich in Excel ohne Probleme Öffnen und direkt bearbeiten. Am besten man weißt das WKS Format
+Excel im Explorer dann in Windows zu falls man Excel hat oder man öffnet es in LibreOffice oder OpenOffice.
 
 
-Release: Version 0.5 BETA
+Release: Version 0.5 
 
 Funktionen: Terminal Basierte Oberfläche für: Status Anzeige und Protokollierung Protokollierung von Watt in Sekunden sowie festlegung des Zeitraum
 
