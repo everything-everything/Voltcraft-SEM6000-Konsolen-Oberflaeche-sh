@@ -20,7 +20,7 @@ Der Skript der Oberfläche Orientiert sich an den Untergrund:
 
 https://bash.cyberciti.biz/guide/Menu_driven_scripts
 
-Systemvorrausetzungen (getestet): Q4OS Linux mit Trinity Oberfläche (Basiert auf Debian 10 läuft eventuell auch auf Ubuntu und co) Bluetooth 4.0 USB Dongle , Intel(R) Wireless Bluetooth(R)
+Systemvorrausetzungen (getestet): In VirtualBox mit Q4OS Linux mit Trinity Oberfläche (Basiert auf Debian 10 läuft eventuell auch auf Ubuntu und co) Bluetooth 4.0 USB Dongle , Intel(R) Wireless Bluetooth(R)
 
 Installation sudo apt install expect
 
@@ -41,13 +41,15 @@ scan on
 scan off 
 exit
 
+Bereits hier sollte man die MAC-Adresse des Voltcraft Adapters haben.
+
 Nun kann man auch  hcitool oder bt-device -l nutzen. Wenn man beim Scan den Voltcraft nicht ermitteln konnte.
 
 gatttool für : $ sudo hcitool lescan E Scan ... --> Beispieladresse übernommen von Heckie75s Beschreibung: 
 
-FC:69:47:06:CB:C6 Voltcraft
+FC:69:47:06:CB:C6 Voltcraft 
 
-Notiz: hcitool hat bei mir nicht funktioniert. Bei mir funktionierte bt-device -l , dass man mit sudo apt-get install bluez-tools bekommt. Dies ist jedoch subjektiv. Ausgabe von bt-device -l: 
+Notiz: hcitool hat bei mir unter UBUNTU 2104 nicht funktioniert. Bei mir funktionierte bt-device -l , dass man mit sudo apt-get install bluez-tools bekommt. Dies ist jedoch subjektiv. Ausgabe von bt-device -l: 
 $: (00:00:00:00:00:00) Voltcraft
 
 WICHTIG: Prüfen Sie vor dem Ausführen, dass die Konfigurationsdatei ./bin/known_sem6.config richtig Konfiguriert ist. Prüfen Sie ob der Virtuellen Maschine oder dem Linux der Bluetooth 4.0 Adapter zugeteilt wurde und Betriebsbereit ist.
