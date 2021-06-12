@@ -17,7 +17,22 @@ https://bash.cyberciti.biz/guide/Menu_driven_scripts
 
 Systemvorrausetzungen (getestet): In VirtualBox mit Q4OS Linux mit Trinity Oberfläche (Basiert auf Debian 10 läuft eventuell auch auf Ubuntu und co) Bluetooth 4.0 USB Dongle , Intel(R) Wireless Bluetooth(R)
 
-Installation sudo apt install expect
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Installationen die nötig sind:
+
+Installation von Expect
+
+  -  sudo apt install expect
+
+Installation von blu
+
+sudo apt-get -y install bluetooth bluez bluez-tools rfkill
+
+bt-device l: 
+
+sudo apt-get -y install bluetooth bluez bluez-tools rfkill
+https://computingforgeeks.com/connect-to-bluetooth-device-from-linux-terminal/
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
