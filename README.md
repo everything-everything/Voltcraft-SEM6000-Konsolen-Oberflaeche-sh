@@ -1,6 +1,7 @@
 # Voltcraft-SEM6000-Konsolen-Oberflaeche-im *.sh Format
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Version history / Functions
 
 Version 1.1 Changes :
@@ -19,6 +20,7 @@ Version 0.5 inital Release:
 Menu Interface
 Status status query
 Energie Meter Watt in Second
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
