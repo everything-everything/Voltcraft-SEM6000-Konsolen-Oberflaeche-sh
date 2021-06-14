@@ -1,11 +1,36 @@
 # Voltcraft-SEM6000-Konsolen-Oberflaeche-im *.sh Format
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Version history / Functions
+
+Version 1.1 Changes :
+/Setup/Blue.sh ---> Paths fixed
+/bin/Beenden.sh ---> Paths fixed for Version 1.0
+Version 1.0 Changes:
+
+Add /Setup.sh
+Add /Blue.sh
+Add Functions :
+
+Automatical Bluetooth Setup
+Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
+Version 0.5 inital Release:
+
+Menu Interface
+Status status query
+Energie Meter Watt in Second
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
 Linux Konsolen Oberfläche für Voltcraft SEM6000. 
 
 Wie das ganze in der Verwendung aussieht sehen Sie hier: https://www.youtube.com/watch?v=hi06S4MO6H8
 
 Der Untergrund basiert auf Hackies75 Expect Script SEM6000.EXP   
-Die Original Datei von ./bin/SEM6000.EXP wurde an folgener Stelle modifiziert. Um den Funktionsumfang der SEM6000.EXP sowie des Volcraft Gerätes als auch die Funktionsweise der Software Nachzulesen, lesen Sie hier nach https://github.com/Heckie75/voltcraft-sem-6000
+Die Original Datei von ./bin/SEM6000.EXP wurde an folgener Stelle modifiziert. Um den Funktionsumfang der SEM6000.EXP sowie des Volcraft Gerätes als auch die Funktionsweise der 
+Software Nachzulesen, lesen Sie hier nach https://github.com/Heckie75/voltcraft-sem-6000
 
 Zeile 41 : set KNOWN_SEMS_FILE "~/.known_sem6" zu set KNOWN_SEMS_FILE "./bin/known_sem6.config"
 
