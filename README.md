@@ -38,6 +38,75 @@ gatttool für : $ sudo hcitool lescan ist vermutlich auch in den bluez tools ode
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+Automatisches Konfigurieren
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Prüfen Sie ob Ihre Bluetooth Dienste als auch Stick Arbeiten und Installieren Sie falls
+nicht vorhanden das Bluetooth Ordnungsgemäß und Achten Sie darauf, das Bluetooth 
+Ordentlich Konfiguriert ist und Bluetoothctl sowie bt-device -l arbeiten.
+
+Prüfen Sie ob die Befehle Bluetoothctl und bt-device -l Verfügbar sind. 
+
+Notfalls installieren Sie diese mit 
+
+sudo apt-get -y install bluetooth bluez bluez-tools rfkill
+
+Öffnen Sie die Konsole im entpackten Hauptverzeichnis des Programms Führen Sie als erstes dies hier aus:
+Sudo chmod +x ./Setup/Setup.sh
+
+
+Anschließend gehen Sie in das Verzeichnis setup und starten Sie die Konfiguration mit:
+
+./Setup.sh 
+
+Falls dieser nach "Die Skript Dateien wurden Registriert" hängt, Prüfen Sie ob der 
+Bluetooth Adatpter richtig angeschlossen ist und Software dazu installiert ist.  
+Oft reicht es den USB Bluetooth Adapter neu einzustecken oder bei Virtual Box  einzubinden und es nochmal zu versuchen.
+Mehr dazu in Fehlerbehebungen. 
+
+Der Skript lässt sich and der Stelle mit [STRG] + [c] oder [STRG] + [ALT] +  [c] Je nach Linux beenden
+
+Diese Registriert alle Notwendigen *.SH 
+Skripte. Diese Führt die Bluetooth Konfiguration für die SEM6000 mit Standard Parameter durch und 
+schreibt dessen Konfigurationsdatei mit hilfe von Bluetoothctl und bt-device -l. 
+
+Mit ./Blue.sh können Sie die Bluetoothkonfiguration in der known_sem6.config Automatisch vornehmen lassen. 
+mit [STRG] + [c] oder [STRG] + [ALT] +  [c] lässt sich dieses auch Beenden.
+
+
+Anschließend können Sie das mit ./Run im Hauptverzeichnis Des Skript Programms den Voltcraft SEM6000 
+nutzen und die Ergebnisse in /Ergebnis einsehen.
+
+Diese liegen im *.WKS Format als auch im TXT Format vor. WKS lässt sich in LibreOffice/ OpenOffice und 
+Excel einfach bearbeiten
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Fehlerbehebungen
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Manuelles Workaround falls es nicht funktioniert :
+
+Geben Sie hierzu einmal Bluetoothctl als auch bt-device -l ein um zu Prüfen ob diese installiert sind. 
+In Bluetoothctl können Sie Bluetoothctl wie folgt konfigurieren in folgender Reihenfolge:
+
+Falls nicht verfügbar: 
+
+agent on
+default-agent
+power on
+devices
+scan on 
+scan off 
+exit
+
+
+Anschließen kann man mit SCAN On  --- und Scan Off die Bereitschaft des Bluetooth Dongels im Linux 
+Terminal feststellen. Der Skript führt die Schritte auch aus. Dies dient nur für ein Manuelles 
+Workaround.!
+::::::::::::::::::::::::::
 
 Kapitel 1: Konfigurationen der Dateien für die Oberfläche 
 
@@ -146,7 +215,7 @@ Der Status ist im TXT Format gespeichert. Die Tabelle im *.WKS Format. Diese lä
 Excel im Explorer dann in Windows zu falls man Excel hat oder man öffnet es in LibreOffice oder OpenOffice.
 
 
-Release: Version 0.5 
+Release: Version 1.0 
 
 Funktionen: Terminal Basierte Oberfläche für: Status Anzeige und Protokollierung Protokollierung von Watt in Sekunden sowie festlegung des Zeitraum
 
