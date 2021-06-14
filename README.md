@@ -15,7 +15,10 @@ Der Skript der Oberfläche Orientiert sich an den Untergrund:
 
 https://bash.cyberciti.biz/guide/Menu_driven_scripts
 
-Systemvorrausetzungen (getestet): In VirtualBox mit Q4OS Linux mit Trinity Oberfläche (Basiert auf Debian 10 läuft eventuell auch auf Ubuntu und co) Bluetooth 4.0 USB Dongle , Intel(R) Wireless Bluetooth(R)
+Systemvorrausetzungen (getestet): 
+In VirtualBox mit Q4OS Linux mit Trinity Oberfläche (Basiert auf Debian 10)
+Oder  Ubuntu OS - nur *.SH Oberfläche läuft ohne die *.desktop Verknüpfung 
+Bluetooth 4.0 USB Dongle , Intel(R) Wireless Bluetooth(R)
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
