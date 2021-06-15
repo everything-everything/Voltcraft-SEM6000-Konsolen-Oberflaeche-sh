@@ -17,7 +17,6 @@ Automatical Bluetooth Setup
 Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
 
 Add /Setup.sh
-
 Add /Blue.sh
 
 
