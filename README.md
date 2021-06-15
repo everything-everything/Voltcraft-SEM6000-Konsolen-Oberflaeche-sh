@@ -66,22 +66,19 @@ Installation von Expect
 
   - sudo apt install expect
 
-Installation von blu
+Installation von bt-device l:
 
   - sudo apt-get -y install bluetooth bluez bluez-tools rfkill
 
-bt-device l: 
-
-sudo apt-get -y install bluetooth bluez bluez-tools rfkill
 https://computingforgeeks.com/connect-to-bluetooth-device-from-linux-terminal/
 
-Bluetoothctl: 
+Bluetoothctl / gatttool /hcitool : 
 
-- apt-get install bluez
+- apt-get install bluez 
 
 https://command-not-found.com/bluetoothctl
 
-gatttool für : $ sudo hcitool lescan ist vermutlich auch in den bluez tools oder expect enthalten. Konnte ich nicht rausfinden.
+ 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
