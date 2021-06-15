@@ -15,7 +15,7 @@ Version 1.0 Changes:
 
 Add Functions :
 
-- Automatical Bluetooth Setup
+- Automatical Bluetooth Setup for One Device
 - Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
 - Configurate Automatical *.desktop Files for Q4OS (Trinity / Plasma)
 
@@ -260,12 +260,11 @@ Excel im Explorer dann in Windows zu falls man Excel hat oder man öffnet es in 
 
 
 Release: Version 1.0 
-
-Funktionen: Terminal Basierte Oberfläche für: Status Anzeige und Protokollierung Protokollierung von Watt in Sekunden sowie festlegung des Zeitraum
-
+           
 Geplante Features in Naher Zukunft:
 
-Konfiguraion der Konfigurationsdatei über die Oberfläche
+Konfiguraion mehrerer Geräte über die Oberfläche.
+
 Geplante Features in weiter Ferne: -Features die SEM6000.EXP bietet nach und nach in die Terminal Oberfläche zu Integieren.
 
 Have fun
