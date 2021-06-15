@@ -54,6 +54,10 @@ In VirtualBox mit Q4OS Linux mit Trinity Oberfläche (Basiert auf Debian 10)
 Oder  Ubuntu OS - nur *.SH Oberfläche läuft ohne die *.desktop Verknüpfung 
 Bluetooth 4.0 USB Dongle , Intel(R) Wireless Bluetooth(R)
 
+In Linux muss vorhanden sein: 
+coreutils
+
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Installationen die nötig sind:
