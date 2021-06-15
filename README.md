@@ -75,6 +75,12 @@ bt-device l:
 sudo apt-get -y install bluetooth bluez bluez-tools rfkill
 https://computingforgeeks.com/connect-to-bluetooth-device-from-linux-terminal/
 
+Bluetoothctl: 
+
+- apt-get install bluez
+
+https://command-not-found.com/bluetoothctl
+
 gatttool für : $ sudo hcitool lescan ist vermutlich auch in den bluez tools oder expect enthalten. Konnte ich nicht rausfinden.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
