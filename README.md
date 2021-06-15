@@ -5,19 +5,21 @@
 Version history / Functions
 
 Version 1.1 Changes :
-/Setup/Blue.sh ---> Paths fixed
-/bin/Beenden.sh ---> Paths fixed for Version 1.0
-Automatical Startup up of Run.sh after Setup
+
+- /Setup/Blue.sh ---> Paths fixed
+- /bin/Beenden.sh ---> Paths fixed 
+- Automatical Startup up of Run.sh after Setup
 
 
 Version 1.0 Changes:
+
 Add Functions :
 
-Automatical Bluetooth Setup
-Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
+- Automatical Bluetooth Setup
+- Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
 
-- Add /Setup.sh
-- Add /Blue.sh
+- Add /Setup/Setup.sh
+- Add /Setup/Blue.sh
 
 
 
@@ -25,12 +27,11 @@ Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
 Version 0.5 inital Release:
 
 Menu Interface
-Status status query
-Energie Meter Watt in Second
+
+- Status status query
+- Energie Meter Watt in Second
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
 
 
 Linux Konsolen Oberfläche für Voltcraft SEM6000. 
@@ -41,9 +42,7 @@ Der Untergrund basiert auf Hackies75 Expect Script SEM6000.EXP
 Die Original Datei von ./bin/SEM6000.EXP wurde an folgener Stelle modifiziert. Um den Funktionsumfang der SEM6000.EXP sowie des Volcraft Gerätes als auch die Funktionsweise der 
 Software Nachzulesen, lesen Sie hier nach https://github.com/Heckie75/voltcraft-sem-6000
 
-Zeile 41 : set KNOWN_SEMS_FILE "~/.known_sem6" zu set KNOWN_SEMS_FILE "./bin/known_sem6.config"
-
-dass es ssh kompatibel ist.
+Zeile 41 : set KNOWN_SEMS_FILE "~/.known_sem6" zu set KNOWN_SEMS_FILE "./bin/known_sem6.config" das es SSH kompatibel ist.
 
 Der Skript der Oberfläche Orientiert sich an den Untergrund:
 
@@ -60,11 +59,11 @@ Installationen die nötig sind:
 
 Installation von Expect
 
-  -  sudo apt install expect
+  - sudo apt install expect
 
 Installation von blu
 
-sudo apt-get -y install bluetooth bluez bluez-tools rfkill
+  - sudo apt-get -y install bluetooth bluez bluez-tools rfkill
 
 bt-device l: 
 
@@ -83,19 +82,20 @@ Prüfen Sie ob Ihre Bluetooth Dienste als auch Stick Arbeiten und Installieren S
 nicht vorhanden das Bluetooth Ordnungsgemäß und Achten Sie darauf, das Bluetooth 
 Ordentlich Konfiguriert ist und Bluetoothctl sowie bt-device -l arbeiten.
 
-Prüfen Sie ob die Befehle Bluetoothctl und bt-device -l Verfügbar sind. 
+- Prüfen Sie ob die Befehle Bluetoothctl und bt-device -l Verfügbar sind. 
 
 Notfalls installieren Sie diese mit 
 
-sudo apt-get -y install bluetooth bluez bluez-tools rfkill
+- sudo apt-get -y install bluetooth bluez bluez-tools rfkill
 
 Öffnen Sie die Konsole im entpackten Hauptverzeichnis des Programms Führen Sie als erstes dies hier aus:
-Sudo chmod +x ./Setup/Setup.sh
+
+- Sudo chmod +x ./Setup/Setup.sh
 
 
-Anschließend gehen Sie in das Verzeichnis setup und starten Sie die Konfiguration mit:
+Anschließend gehen Sie in das Verzeichnis ./Setup und starten Sie die Konfiguration mit:
 
-./Setup.sh 
+- ./Setup.sh 
 
 Falls dieser nach "Die Skript Dateien wurden Registriert" hängt, Prüfen Sie ob der 
 Bluetooth Adatpter richtig angeschlossen ist und Software dazu installiert ist.  
@@ -143,6 +143,8 @@ exit
 Anschließen kann man mit SCAN On  --- und Scan Off die Bereitschaft des Bluetooth Dongels im Linux 
 Terminal feststellen. Der Skript führt die Schritte auch aus. Dies dient nur für ein Manuelles 
 Workaround.!
+
+
 ::::::::::::::::::::::::::
 
 Kapitel 1: Konfigurationen der Dateien für die Oberfläche 
