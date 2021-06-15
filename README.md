@@ -17,6 +17,7 @@ Add Functions :
 
 - Automatical Bluetooth Setup
 - Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
+- Configurate Automatical *.desktop Files for Q4OS (Trinity / Plasma)
 
 - Add /Setup/Setup.sh
 - Add /Setup/Blue.sh
@@ -93,7 +94,7 @@ Notfalls installieren Sie diese mit
 - Sudo chmod +x ./Setup/Setup.sh
 
 
-Anschließend gehen Sie in das Verzeichnis ./Setup und starten Sie die Konfiguration mit:
+Anschließend gehen Sie im Terminal / Konsole in das Verzeichnis ./Setup und starten Sie die Konfiguration mit:
 
 - ./Setup.sh 
 
@@ -112,8 +113,8 @@ Mit ./Blue.sh können Sie die Bluetoothkonfiguration in der known_sem6.config Au
 mit [STRG] + [c] oder [STRG] + [ALT] +  [c] lässt sich dieses auch Beenden.
 
 
-Anschließend können Sie das mit ./Run im Hauptverzeichnis Des Skript Programms den Voltcraft SEM6000 
-nutzen und die Ergebnisse in /Ergebnis einsehen.
+Anschließend können Sie das mit ./Run.SH im Hauptverzeichnis Des Skript Programms den Voltcraft SEM6000 
+nutzen und die Ergebnisse in ./Ergebnis einsehen.
 
 Diese liegen im *.WKS Format als auch im TXT Format vor. WKS lässt sich in LibreOffice/ OpenOffice und 
 Excel einfach bearbeiten
@@ -234,21 +235,21 @@ Ausführung:
 
 Konsole: 
 
-./run.sh ----> in SSH oder Konsole oder ./run_desktop.sh ausgeführt 
+./run.sh ----> in SSH oder Konsole 
 
 Benutzeroberfläche in Linux:
 
-über ein Doppelkick auf run_desktop.Desktop
+über ein Doppelkick auf run_desktop.Desktop in Q4OS Run_Desktop.deskop Doppelklick. > Supported von KDE Trinity Oberfläche oder KDE Plasma Oberfläche in Q4OS 
 
 auf den Pfad in dem man Arbeitet und bei Run_Desktop wo die Datei liegt und wo diese Ausgeführt wird anpassen. Dies braucht man aber nur wenn man sich auf der Grafischen 
 Oberfläche von Linux befindet und diese vom Desktop aus Öffnen will.
 
-Ich  muss es noch testen ob man diese bei UBUNTU als ausführenden Script registrieren muss.
+*.desktop laufen nicht von UBUNTU aus. hier den Terminal / Konsole nutzen.
 
 :::::::::::::::::::::
 
 
-Protokolliert werden die Ergebnisse des Auslesens in ./Ergebnise
+- Protokolliert werden die Ergebnisse des Auslesens in ./Ergebnise
 
 Der Status ist im TXT Format gespeichert. Die Tabelle im *.WKS Format. Diese lässt sich in Excel ohne Probleme Öffnen und direkt bearbeiten. Am besten man weißt das WKS Format
 Excel im Explorer dann in Windows zu falls man Excel hat oder man öffnet es in LibreOffice oder OpenOffice.
