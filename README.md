@@ -62,19 +62,22 @@ coreutils
 
 Installationen die nötig sind:
 
-Installation von Expect
+1) Installation von Expect
 
-  - sudo apt install expect
+    - sudo apt install expect
 
-Installation von bt-device l:
 
-  - sudo apt-get -y install bluetooth bluez bluez-tools rfkill
+2) Installation von bt-device l:
 
+    - sudo apt-get -y install bluetooth bluez bluez-tools rfkill
+
+
+More Infos: 
 https://computingforgeeks.com/connect-to-bluetooth-device-from-linux-terminal/
 
-Bluetoothctl / gatttool /hcitool : 
+3) Bluetoothctl / gatttool /hcitool : 
 
-- apt-get install bluez 
+          - apt-get install bluez 
 
 https://command-not-found.com/bluetoothctl
 
