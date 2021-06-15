@@ -7,14 +7,18 @@ Version history / Functions
 Version 1.1 Changes :
 /Setup/Blue.sh ---> Paths fixed
 /bin/Beenden.sh ---> Paths fixed for Version 1.0
+Automatical Startup up of Run.sh after Setup
+
+
 Version 1.0 Changes:
+Add Functions :
+Automatical Bluetooth Setup
+Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
 
 Add /Setup.sh
 Add /Blue.sh
-Add Functions :
 
-Automatical Bluetooth Setup
-Adds *.sh Scripts to Linux System that you can Use it under UBUNTU
+
 
 Version 0.5 inital Release:
 
